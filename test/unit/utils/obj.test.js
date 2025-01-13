@@ -9,6 +9,15 @@ class Foo {
   }
 }
 
+/**
+ * Helper function to test if values pass or fail a given test function
+ *
+ * @param {Object} assert - QUnit assert object
+ * @param {Function} fn - Function to test values against
+ * @param {string} descriptor - Description of what is being tested
+ * @param {Object} passes - Object containing values that should pass the test
+ * @param {Object} failures - Object containing values that should fail the test
+ */
 const passFail = (assert, fn, descriptor, passes, failures) => {
   Object.keys(passes).forEach(key => {
     assert.ok(fn(passes[key]), `${key} IS ${descriptor}`);
