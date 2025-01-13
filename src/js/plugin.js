@@ -52,7 +52,7 @@ const pluginExists = (name) => pluginStorage.hasOwnProperty(name);
  * @param   {string} name
  *          The name of a plugin.
  *
- * @return {typeof Plugin|Function|undefined}
+ * @returns {(typeof Plugin|Function|undefined)}
  *          The plugin (or undefined).
  */
 const getPlugin = (name) => pluginExists(name) ? pluginStorage[name] : undefined;
