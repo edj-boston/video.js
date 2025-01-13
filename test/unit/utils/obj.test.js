@@ -2,8 +2,20 @@
 import sinon from 'sinon';
 import * as Obj from '../../../src/js/utils/obj';
 
+/**
+ * Test class used for object type checking tests
+ */
 class Foo {
+  /**
+   * Creates an instance of Foo
+   */
   constructor() {}
+
+  /**
+   * Returns a string representation of the Foo instance
+   *
+   * @return {string} A string identifying this as a Foo instance
+   */
   toString() {
     return 'I am a Foo!';
   }
